@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifradora kamel</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- switch -->
+    <div id="title">DESENCRIPTAR</div>
+
+    <label class="switch">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="slider"></span>
+    </label>
+
+    <div id="titleInver">ENCRIPTAR</div>
+
+
+    <!-- candado -->
+    <div class="lock-solid icon"></div>
+
+   <!-- incertar texto -->
+    <input type="text" id="content" oninput="validarNumero(this, 4)">
+    <h1 id="hcontent">RESULTADO: </h1>
+    <button class="button- encrip" id="BE" onclick="encripNum()">enviar</button>
+    <button class="button- desencrip" id="BD"onclick="desencripNum()">enviar</button>
+
+    
+
+    <script src="script.js"></script>
+    <script src="codeScript.js"></script>
+</body>
+</html>

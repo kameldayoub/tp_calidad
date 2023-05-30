@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body{
+  background-color: #9a8c98;
+  transition: 0.5s ease;
+  padding-top: 75px;
+}
+
+/*                                                    PALANDA*/
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 47%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #22223b;
+  transition: .4s;
+  border-radius: 34px;
+}
+  
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+.slider:after {
+  background-color: #9a8c98;
+}
+  
+input:checked + .slider {
+  background-color: #9a8c98;
+}
+  
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/*                                                        CANDADO */
+
+.lock-solid.icon {
+  color: #9a8c98;
+  position: absolute;
+  margin: 25% 0 0 43%;
+  width: 130px;
+  height: 60px; 
+  border-radius: 20px;
+  border: solid 20px currentColor;
+  background-color: currentColor;
+}
+
+.lock-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 20px; 
+  top: -80px; 
+  width: 50px; 
+  height: 60px; 
+  border-radius: 40px 40px 0 0;
+  border-top: solid 18px currentColor;
+  border-left: solid 18px currentColor;
+  border-right: solid 18px currentColor;
+}
+
+/*                                                            TITULOS*/
+#titleInver{
+  position: absolute;
+  color: #9a8c98;
+  margin:2px 0 0 55%;
+  font-size: 18pt;
+  font-family: 'Raleway', sans-serif;
+}
+
+#title{
+  position: absolute;
+  color: #22223b;
+  margin:2px 0 0 31%;
+  font-size: 18pt;
+  font-family: 'Raleway', sans-serif;
+}
+/*                                                            botones */
+.button-{
+  position: absolute;
+  color: #9a8c98;
+  background-color: #22223b;
+  
+  margin: 9.5% 0 0 30%;
+  width: 100px;
+  height: 52px;
+  font-size: 20pt;
+
+  border-radius: 25px 0px 0px 25px;
+
+
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.button-.encrip{
+  border-radius: 0px 25px 25px 0px;
+
+
+  margin: 9.5% 0 0 61%;
+  color: #9a8c98;
+  background-color: #9a8c98;
+}
+
+.button-:hover{
+  scale: 1.1;
+}
+
+
+/*                                                text*/
+
+#content{
+  position: absolute;
+  margin: 9.5% 0 0 38%;
+
+  width: 300px;
+  height: 50px;
+  
+  font-size: 20pt;
+  color: #9a8c98;
+
+  text-align: center;
+  
+  background-color: #22223b;
+  transition: 0.5s ease;
+
+  outline: none;
+  border: none;
+}
+
+/*                                              respuesta */
+#hcontent{
+  position:absolute;
+  margin: 17.5% 0 0 39%;
+  font-family: 'Raleway', sans-serif;
+  color: #22223b;
+  transition: 0.5s ease;
+  
+}
+
+
+
